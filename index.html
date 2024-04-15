@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <a href="#sidebar" class="header__logo-link">
+          <img src="./logo.jpg" alt="логотип" height="60px" width="200px" />
+        </a>
+      </div>
+    </header>
+
+    <aside class="sidebar" id="sidebar">
+      <nav class="sidebar__menu">
+        <ul class="sidebar__list">
+          <li class="sidebar__item">
+            <img
+              src="./foto/key-square.png"
+              alt="Dashboard"
+              height="24px"
+              width="24px"
+            />
+            <a href="#" class="sidebar__link">Dashboard</a>
+          </li>
+          <li class="sidebar__item">
+            <img
+              src="./foto/3d-square 1.png"
+              alt="Product"
+              height="24px"
+              width="24px"
+            />
+            <a href="#" class="sidebar__link">Product</a>
+          </li>
+          <li class="sidebar__item">
+            <img
+              src="./foto/user-square 1.png"
+              alt="Customers"
+              height="24px"
+              width="24px"
+            />
+            <a href="#" class="sidebar__link">Customers</a>
+          </li>
+          <li class="sidebar__item">
+            <img
+              src="./foto/wallet-money 2.png"
+              alt="Income"
+              height="24px"
+              width="24px"
+            />
+            <a href="#" class="sidebar__link">Income</a>
+          </li>
+          <li class="sidebar__item">
+            <img
+              src="./foto/discount-shape 1.png"
+              alt="Promote"
+              height="24px"
+              width="24px"
+            />
+            <a href="#" class="sidebar__link">Promote</a>
+          </li>
+          <li class="sidebar__item">
+            <img
+              src="./foto/message-question 1.png"
+              alt="Help"
+              height="24px"
+              width="24px"
+            />
+            <a href="#" class="sidebar__link">Help</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="sidebar__account">
+        <img
+          src="./foto/Ellipse 8.png"
+          alt="account info"
+          height="42px"
+          width="42px"
+        />
+        <div class="sidebar__account-text">
+          <p><strong>Evano</strong><br />Project Manager</p>
+        </div>
+      </div>
+    </aside>
+
+    <div class="accname">
+      <p class="accname__text"><strong>Hello Evano 👋🏼,</strong></p>
+    </div>
+    <div class="maincontent">
+      <div class="container">
+        <h2><strong>All Customers</strong></h2>
+        <div class="search-container">
+          <img
+            src="./foto/search 1.svg"
+            alt="search"
+            height="24px"
+            width="24px"
+          />
+          <input type="text" placeholder="Search" />
+        </div>
+      </div>
+      <h3>Active Members</h3>
+
+      <table id="customerTable">
+        <thead>
+          <tr>
+            <th>CustomerName</th>
+            <th>Company</th>
+            <th>PhoneNumber</th>
+            <th>Email</th>
+            <th>Country</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <p class="data-text">Showing data 1 to 8 of 256K entries</p>
+      <div class="pagination" id="pagination"></div>
+    </div>
+    <script src="script.js"></script>
+
+    <script src="active--.js"></script>
+    <script type="module" src="pagination.js"></script>
+    <script type="module" src="data.js"></script>
+  </body>
+</html>
